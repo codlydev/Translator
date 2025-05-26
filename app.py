@@ -1,47 +1,3 @@
-# import streamlit as st
-# from googletrans import Translator
-
-# # Initialize the translator
-# translator = Translator()
-
-# # Streamlit UI
-# st.set_page_config(page_title="Language Translator", layout="centered")
-# st.title("🌍 Language Translator")
-# st.write("Translate text from one language to another using Google Translate.")
-
-# # User input
-# text_to_translate = st.text_area("Enter text to translate:")
-
-# # Language options
-# lang_codes = {
-#     'English': 'en',
-#     'Spanish': 'es',
-#     'French': 'fr',
-#     'German': 'de',
-#     'Urdu': 'ur',
-#     'Chinese (Simplified)': 'zh-cn',
-#     'Arabic': 'ar',
-#     'Hindi': 'hi',
-#     'Russian': 'ru',
-# }
-
-# src_lang = st.selectbox("From Language", list(lang_codes.keys()), index=0)
-# dest_lang = st.selectbox("To Language", list(lang_codes.keys()), index=1)
-
-# # Translate button
-# if st.button("Translate"):
-#     if text_to_translate.strip() != "":
-#         translated = translator.translate(
-#             text_to_translate,
-#             src=lang_codes[src_lang],
-#             dest=lang_codes[dest_lang]
-#         )
-#         st.success(f"**Translated Text:** {translated.text}")
-#     else:
-#         st.warning("Please enter some text to translate.")
-
-#-----------------------------------------------------------------------
-
 import streamlit as st
 from googletrans import Translator, LANGUAGES
 
@@ -101,5 +57,4 @@ if st.button("Translate"):
         st.warning("⚠️ Please enter some text to translate.")
 
 
-#-------------------------------------------------------------------------
 
